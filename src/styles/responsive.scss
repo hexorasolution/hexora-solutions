@@ -1,0 +1,27 @@
+@use 'variables' as *;
+
+// Mobile First Responsive Utilities
+
+// Hide/Show at breakpoints
+.show-mobile  { display: none !important; @media (max-width: $mobile)  { display: block !important; } }
+.show-tablet  { display: none !important; @media (max-width: $tablet)  { display: block !important; } }
+.hide-mobile  { @media (max-width: $mobile)  { display: none !important; } }
+.hide-tablet  { @media (max-width: $tablet)  { display: none !important; } }
+.hide-desktop { @media (min-width: $laptop)  { display: none !important; } }
+
+// Responsive text
+@media (max-width: $mobile) {
+  .text-hero   { font-size: 2.2rem !important; }
+  .text-title  { font-size: 1.8rem !important; }
+  .section     { padding: 60px 0 !important; }
+  .container   { padding: 0 16px !important; }
+}
+
+@media (max-width: $tablet) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr !important; }
+  .flex-between { flex-direction: column; gap: 16px; }
+}
+
+// Section responsive padding
+.section-sm { padding: 60px 0; @media (max-width: $mobile) { padding: 40px 0; } }
+.section-lg { padding: 120px 0; @media (max-width: $mobile) { padding: 60px 0; } }

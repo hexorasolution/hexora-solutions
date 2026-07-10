@@ -1,0 +1,106 @@
+@use 'variables' as *;
+
+// ============================================================
+// DARK MODE OVERRIDES
+// ============================================================
+
+.dark {
+  // Backgrounds
+  background-color: $dark-bg;
+  color: #e5e7eb;
+
+  // Cards
+  .card {
+    background: $dark-card;
+    border-color: $dark-border;
+  }
+
+  // Inputs
+  input, textarea, select {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: $dark-border;
+    color: #e5e7eb;
+
+    &::placeholder { color: #4b5563; }
+    &:focus { border-color: $hexora-blue; }
+  }
+
+  // Text
+  h1, h2, h3, h4, h5, h6 { color: #f9fafb; }
+  p { color: #9ca3af; }
+
+  // Borders
+  .border { border-color: $dark-border; }
+  hr { border-color: $dark-border; }
+
+  // White backgrounds
+  .bg-white {
+    background-color: $dark-card !important;
+  }
+
+  .bg-gray-50 {
+    background-color: rgba(255, 255, 255, 0.02) !important;
+  }
+
+  // Navigation
+  .navbar {
+    &.scrolled {
+      background: rgba(10, 15, 30, 0.95);
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    &__link {
+      color: #d1d5db;
+
+      &:hover, &.active { color: $hexora-glow; }
+    }
+
+    &__dropdown {
+      background: $dark-card;
+      border-color: $dark-border;
+    }
+
+    &__mobile {
+      background: $dark-card;
+    }
+  }
+
+  // Prose content
+  .prose {
+    h2, h3 { color: #f9fafb; }
+    p, li { color: #9ca3af; }
+    strong { color: #e5e7eb; }
+    code { background: rgba(255, 255, 255, 0.05); }
+    blockquote {
+      background: rgba(26, 60, 255, 0.1);
+      color: #9ca3af;
+    }
+  }
+
+  // Skeleton loaders
+  .skeleton {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.08) 50%,
+      rgba(255, 255, 255, 0.04) 100%
+    );
+    background-size: 200% auto;
+    animation: shimmer 1.5s linear infinite;
+  }
+
+  // Scrollbar
+  ::-webkit-scrollbar-track { background: $dark-card; }
+
+  // Tables
+  table {
+    th { background: rgba(255, 255, 255, 0.05); color: #e5e7eb; }
+    td { color: #9ca3af; border-color: $dark-border; }
+    tr:hover td { background: rgba(255, 255, 255, 0.02); }
+  }
+
+  // Select
+  select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%239ca3af'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+  }
+}

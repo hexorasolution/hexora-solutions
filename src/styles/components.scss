@@ -1,0 +1,772 @@
+@use 'variables' as *;
+@use 'animations' as *;
+
+// ============================================================
+// SERVICE DETAIL PAGE
+// ============================================================
+.service-detail {
+  &__hero {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  &__stats-strip {
+    background: linear-gradient(135deg, $dark-bg, #0d1b3e);
+    padding: $spacing-10 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  &__section {
+    padding: $spacing-20 0;
+
+    &--dark {
+      background: linear-gradient(135deg, $dark-bg 0%, #0d1b3e 60%, $dark-bg 100%);
+    }
+
+    &--light {
+      background: $off-white;
+      .dark & { background: $gray-900; }
+    }
+  }
+}
+
+// ============================================================
+// PORTFOLIO
+// ============================================================
+.portfolio {
+  &__card {
+    border-radius: $radius-2xl;
+    overflow: hidden;
+    transition: $transition-normal;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+
+    &-image {
+      position: relative;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      &:hover img { transform: scale(1.08); }
+    }
+
+    &-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+
+      &:hover { opacity: 1; }
+    }
+  }
+
+  &__filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-2;
+    margin-bottom: $spacing-10;
+
+    &-btn {
+      padding: 8px 20px;
+      border-radius: $radius-full;
+      font-size: $text-sm;
+      font-weight: 600;
+      cursor: pointer;
+      transition: $transition-fast;
+      border: none;
+
+      &--active {
+        background: linear-gradient(135deg, $hexora-blue, $royal-blue-light);
+        color: $white;
+        box-shadow: $shadow-glow-sm;
+      }
+
+      &--inactive {
+        background: $white;
+        color: $gray-500;
+        border: 1px solid $gray-200;
+
+        &:hover {
+          background: rgba(26, 60, 255, 0.05);
+          color: $hexora-blue;
+        }
+      }
+    }
+  }
+}
+
+// ============================================================
+// BLOG
+// ============================================================
+.blog {
+  &__card {
+    border-radius: $radius-2xl;
+    overflow: hidden;
+    transition: $transition-normal;
+
+    &-image {
+      aspect-ratio: 16/9;
+      overflow: hidden;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      &:hover img { transform: scale(1.06); }
+    }
+  }
+
+  &__content {
+    &-prose {
+      h2 {
+        font-family: $font-heading;
+        font-size: $text-2xl;
+        font-weight: 700;
+        color: $gray-900;
+        margin: $spacing-8 0 $spacing-4;
+        line-height: 1.3;
+      }
+
+      h3 {
+        font-family: $font-heading;
+        font-size: $text-xl;
+        font-weight: 600;
+        color: $gray-700;
+        margin: $spacing-6 0 $spacing-3;
+      }
+
+      p {
+        color: $gray-500;
+        line-height: 1.8;
+        margin-bottom: $spacing-4;
+        font-size: $text-base;
+      }
+
+      ul, ol {
+        padding-left: $spacing-6;
+        margin-bottom: $spacing-4;
+
+        li {
+          color: $gray-500;
+          line-height: 1.8;
+          margin-bottom: $spacing-2;
+          list-style: disc;
+        }
+      }
+
+      strong {
+        color: $gray-700;
+        font-weight: 700;
+      }
+
+      blockquote {
+        border-left: 4px solid $hexora-blue;
+        padding: $spacing-4 $spacing-6;
+        background: rgba(26, 60, 255, 0.05);
+        border-radius: 0 $radius-lg $radius-lg 0;
+        margin: $spacing-6 0;
+        font-style: italic;
+        color: $gray-600;
+      }
+
+      code {
+        background: $gray-100;
+        padding: 2px 8px;
+        border-radius: $radius-sm;
+        font-family: $font-mono;
+        font-size: $text-sm;
+        color: $hexora-blue;
+      }
+    }
+  }
+
+  &__sidebar {
+    &-widget {
+      background: $white;
+      border-radius: $radius-xl;
+      padding: $spacing-6;
+      border: 1px solid $gray-200;
+      box-shadow: $shadow-card;
+      margin-bottom: $spacing-6;
+
+      .dark & {
+        background: $dark-card;
+        border-color: $dark-border;
+      }
+    }
+  }
+}
+
+// ============================================================
+// CAREERS
+// ============================================================
+.careers {
+  &__job-card {
+    background: $white;
+    border-radius: $radius-2xl;
+    overflow: hidden;
+    border: 1px solid $gray-200;
+    box-shadow: $shadow-card;
+    transition: $transition-normal;
+
+    .dark & {
+      background: $dark-card;
+      border-color: $dark-border;
+    }
+
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+
+  &__benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $spacing-5;
+
+    @media (max-width: $laptop) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+// ============================================================
+// CONTACT
+// ============================================================
+.contact {
+  &__form {
+    background: $white;
+    border-radius: $radius-2xl * 1.5;
+    padding: $spacing-8;
+    border: 1px solid $gray-200;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+
+    .dark & {
+      background: $dark-card;
+      border-color: $dark-border;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: $radius-xl;
+    border: 1px solid $gray-200;
+    font-size: $text-sm;
+    outline: none;
+    transition: $transition-fast;
+    color: $gray-700;
+    background: $white;
+
+    .dark & {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: $dark-border;
+      color: #e5e7eb;
+    }
+
+    &:focus {
+      border-color: $hexora-blue;
+      box-shadow: 0 0 0 3px rgba(26, 60, 255, 0.1);
+    }
+
+    &--error {
+      border-color: #f87171;
+      background: #fef2f2;
+    }
+
+    &--icon {
+      padding-left: 44px;
+    }
+  }
+
+  &__meeting {
+    background: linear-gradient(135deg, $dark-bg 0%, #0d1b3e 60%, $dark-bg 100%);
+    padding: $spacing-24 0;
+
+    &-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 24px;
+      overflow: hidden;
+    }
+
+    &-step {
+      transition: $transition-normal;
+
+      &--active {
+        background: rgba(26, 60, 255, 0.1);
+        color: #60a5fa;
+      }
+    }
+  }
+
+  &__info-card {
+    background: $white;
+    border: 1px solid $gray-200;
+    border-radius: $radius-xl;
+    padding: $spacing-4;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: $transition-normal;
+    cursor: pointer;
+
+    .dark & {
+      background: $dark-card;
+      border-color: $dark-border;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}
+
+// ============================================================
+// MODALS & OVERLAYS
+// ============================================================
+.modal {
+  &__overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    z-index: $z-modal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $spacing-4;
+  }
+
+  &__container {
+    background: $white;
+    border-radius: 24px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 520px;
+    max-height: 90vh;
+    overflow-y: auto;
+
+    .dark & {
+      background: $dark-card;
+    }
+  }
+
+  &__header {
+    padding: $spacing-6;
+    border-bottom: 1px solid $gray-100;
+
+    .dark & {
+      border-color: $dark-border;
+    }
+  }
+}
+
+// ============================================================
+// SECTION TRANSITIONS
+// ============================================================
+.section-transition {
+  &--dark-to-light {
+    background: linear-gradient(to bottom, $dark-bg 0%, $off-white 100%);
+  }
+
+  &--light-to-dark {
+    background: linear-gradient(to bottom, $off-white 0%, $dark-bg 100%);
+  }
+}
+
+// ============================================================
+// CUSTOM SCROLLBAR FOR DARK SECTIONS
+// ============================================================
+.dark-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(26, 60, 255, 0.4) transparent;
+
+  &::-webkit-scrollbar { width: 4px; }
+  &::-webkit-scrollbar-track { background: transparent; }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(26, 60, 255, 0.4);
+    border-radius: $radius-full;
+  }
+}
+
+// ============================================================
+// SKELETON LOADERS
+// ============================================================
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    $gray-200 0%,
+    $gray-100 50%,
+    $gray-200 100%
+  );
+  background-size: 200% auto;
+  animation: shimmer 1.5s linear infinite;
+  border-radius: $radius-md;
+
+  .dark & {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(255, 255, 255, 0.05) 100%
+    );
+    background-size: 200% auto;
+  }
+
+  &--text  { height: 16px; }
+  &--title { height: 32px; }
+  &--card  { height: 200px; }
+  &--image { height: 250px; }
+  &--avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: $radius-full;
+  }
+}
+
+// ============================================================
+// TOAST NOTIFICATIONS
+// ============================================================
+.toast {
+  &--success {
+    background: linear-gradient(135deg, #10b981, #059669) !important;
+  }
+  &--error {
+    background: linear-gradient(135deg, #ef4444, #dc2626) !important;
+  }
+  &--info {
+    background: linear-gradient(135deg, $hexora-blue, $royal-blue-light) !important;
+  }
+}
+
+// ============================================================
+// PAGE HERO
+// ============================================================
+.page-hero-section {
+  position: relative;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 96px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(10, 15, 30, 0.95) 0%,
+      rgba(13, 27, 62, 0.85) 50%,
+      rgba(10, 15, 30, 0.95) 100%
+    );
+    z-index: 1;
+  }
+
+  &-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  &-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.12;
+    z-index: 0;
+  }
+}
+
+// ============================================================
+// PRICING CARDS
+// ============================================================
+.pricing {
+  &__card {
+    border-radius: $radius-2xl;
+    padding: $spacing-8;
+    display: flex;
+    flex-direction: column;
+    transition: $transition-normal;
+
+    &:hover {
+      transform: translateY(-8px);
+    }
+
+    &--popular {
+      position: relative;
+      transform: scale(1.03);
+
+      &:hover {
+        transform: scale(1.03) translateY(-8px);
+      }
+    }
+  }
+
+  &__features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      gap: $spacing-2;
+      padding: $spacing-2 0;
+      font-size: $text-sm;
+      color: $gray-600;
+    }
+  }
+}
+
+// ============================================================
+// FLIP CARD (Team)
+// ============================================================
+.flip-card {
+  perspective: 1000px;
+  height: 320px;
+  cursor: pointer;
+
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+
+    .flip-card:hover & {
+      transform: rotateY(180deg);
+    }
+  }
+
+  &__front,
+  &__back {
+    position: absolute;
+    inset: 0;
+    border-radius: $radius-2xl;
+    overflow: hidden;
+    backface-visibility: hidden;
+  }
+
+  &__back {
+    transform: rotateY(180deg);
+  }
+}
+
+// ============================================================
+// INDUSTRY SECTION
+// ============================================================
+.industry-section {
+  background: $white;
+  border: 1px solid $gray-200;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: $shadow-card;
+  transition: $transition-normal;
+
+  .dark & {
+    background: $dark-card;
+    border-color: $dark-border;
+    box-shadow: $shadow-card-dark;
+  }
+
+  &:hover {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  }
+
+  &__image {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    &:hover img { transform: scale(1.05); }
+  }
+
+  &__content {
+    padding: $spacing-10;
+  }
+}
+
+// ============================================================
+// STATS COUNTER
+// ============================================================
+.stats {
+  &__card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: $radius-2xl;
+    padding: $spacing-6;
+    text-align: center;
+    transition: $transition-normal;
+    cursor: default;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.06);
+      transform: translateY(-8px);
+    }
+
+    &__number {
+      font-family: $font-heading;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: $spacing-2;
+    }
+
+    &__label {
+      color: $white;
+      font-weight: 600;
+      font-size: $text-sm;
+    }
+
+    &__desc {
+      color: $gray-500;
+      font-size: $text-xs;
+      margin-top: 4px;
+    }
+  }
+}
+
+// ============================================================
+// TIMELINE
+// ============================================================
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, $hexora-blue, rgba(26, 60, 255, 0.1));
+    transform: translateX(-50%);
+
+    @media (max-width: $tablet) {
+      left: 20px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: $spacing-8;
+    margin-bottom: $spacing-12;
+    position: relative;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      padding-left: 50px;
+    }
+  }
+
+  &__dot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: $radius-full;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    font-weight: 700;
+    z-index: 5;
+    flex-shrink: 0;
+
+    @media (max-width: $tablet) {
+      left: 0;
+      transform: none;
+    }
+  }
+
+  &__content {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: $radius-xl;
+    padding: $spacing-6;
+    transition: $transition-normal;
+    backdrop-filter: blur(10px);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.06);
+    }
+  }
+
+  &__spacer {
+    flex: 1;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+}
+
+// ============================================================
+// PROCESS STEPS
+// ============================================================
+.process {
+  &__step {
+    display: flex;
+    gap: $spacing-5;
+    margin-bottom: $spacing-8;
+
+    &-number {
+      width: 48px;
+      height: 48px;
+      border-radius: $radius-xl;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      font-weight: 700;
+      font-size: $text-sm;
+      flex-shrink: 0;
+    }
+
+    &-connector {
+      width: 1px;
+      flex: 1;
+      margin-top: $spacing-2;
+      min-height: 32px;
+    }
+
+    &-content {
+      padding-bottom: $spacing-8;
+    }
+  }
+}

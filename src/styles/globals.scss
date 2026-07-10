@@ -1,0 +1,399 @@
+// ============================================
+// HEXORA SOLUTIONS - GLOBAL STYLES
+// ============================================
+
+@use 'variables' as *;
+@use 'animations' as *;
+
+// ⬇️ ADD THESE MODULE IMPORTS (Navbar, Hero, Responsive)
+@use 'navbar';
+@use 'hero';
+@use 'responsive';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+// Tailwind Base
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Reset & Base
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: $font-body;
+  background-color: $off-white;
+  color: $gray-900;
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &.dark {
+    background-color: $dark-bg;
+    color: #e5e7eb;
+  }
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: $gray-100;
+  .dark & { background: $dark-card; }
+}
+
+::-webkit-scrollbar-thumb {
+  background: $royal-blue-light;
+  border-radius: $radius-full;
+  &:hover { background: $royal-blue; }
+}
+
+// Selection
+::selection {
+  background: $hexora-blue;
+  color: $white;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: $transition-fast;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: $font-body;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+input, textarea, select {
+  font-family: $font-body;
+  outline: none;
+}
+
+ul, ol { list-style: none; }
+
+// Container
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 $spacing-6;
+
+  @media (max-width: $tablet) {
+    padding: 0 $spacing-4;
+  }
+}
+
+// Section
+.section {
+  padding: $spacing-24 0;
+
+  @media (max-width: $tablet) {
+    padding: $spacing-16 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding: $spacing-12 0;
+  }
+}
+
+// Gradient Backgrounds
+.bg-gradient-primary {
+  background: linear-gradient(135deg, $royal-blue-dark 0%, $royal-blue 50%, $royal-blue-light 100%);
+}
+
+.bg-gradient-hero {
+  background: linear-gradient(
+    135deg,
+    #0a0f1e 0%,
+    #0d1b3e 25%,
+    #1a2f7a 50%,
+    #0d1b3e 75%,
+    #0a0f1e 100%
+  );
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+.bg-gradient-card {
+  background: linear-gradient(135deg, rgba(26, 60, 255, 0.1) 0%, rgba(65, 105, 225, 0.05) 100%);
+}
+
+// Glass Effect
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(10, 15, 30, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+// Text Gradient
+.text-gradient {
+  background: linear-gradient(135deg, $hexora-blue 0%, $hexora-glow 50%, $royal-blue-light 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-white {
+  background: linear-gradient(135deg, #ffffff 0%, #c7d9ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+// Glow Border
+.glow-border {
+  border: 1px solid rgba(26, 60, 255, 0.3);
+  box-shadow: 0 0 20px rgba(26, 60, 255, 0.1);
+  transition: $transition-normal;
+
+  &:hover {
+    border-color: rgba(26, 60, 255, 0.8);
+    box-shadow: $shadow-glow-md;
+  }
+}
+
+// Grid Layouts
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $spacing-8;
+
+  @media (max-width: $tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $spacing-8;
+
+  @media (max-width: $laptop) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $mobile) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $spacing-6;
+
+  @media (max-width: $laptop) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $mobile) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Flex Utilities
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// Page Hero Banner
+.page-hero {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, $dark-bg 0%, $royal-blue-dark 100%);
+    z-index: 0;
+  }
+
+  .page-hero-content {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+// Cards
+.card {
+  background: $white;
+  border-radius: $radius-xl;
+  padding: $spacing-6;
+  box-shadow: $shadow-card;
+  transition: $transition-normal;
+
+  .dark & {
+    background: $dark-card;
+    box-shadow: $shadow-card-dark;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Buttons
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-2;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, $hexora-blue 0%, $royal-blue-light 100%);
+  color: $white;
+  border-radius: $radius-full;
+  font-weight: 600;
+  font-size: $text-base;
+  transition: $transition-normal;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, $royal-blue-light 0%, $hexora-blue 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $shadow-glow-md;
+
+    &::before { opacity: 1; }
+  }
+
+  span, svg { position: relative; z-index: 1; }
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-2;
+  padding: 13px 32px;
+  background: transparent;
+  color: $white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: $radius-full;
+  font-weight: 600;
+  font-size: $text-base;
+  transition: $transition-normal;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: $white;
+    transform: translateY(-2px);
+  }
+}
+
+// Badge
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  background: rgba(26, 60, 255, 0.1);
+  color: $royal-blue-light;
+  border-radius: $radius-full;
+  font-size: $text-sm;
+  font-weight: 600;
+  border: 1px solid rgba(26, 60, 255, 0.2);
+}
+
+// Loading
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  background: $dark-bg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+// Divider
+.divider {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(135deg, $hexora-blue, $royal-blue-light);
+  border-radius: $radius-full;
+  margin: $spacing-4 auto;
+}
+
+// Noise Texture Overlay
+.noise-overlay {
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 1;
+  }
+}
+
+// Responsive Utilities
+@media (max-width: $mobile) {
+  .hidden-mobile { display: none !important; }
+}
+
+@media (max-width: $tablet) {
+  .hidden-tablet { display: none !important; }
+}
+
+@media (min-width: $laptop) {
+  .hidden-desktop { display: none !important; }
+}
