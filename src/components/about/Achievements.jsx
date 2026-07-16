@@ -3,12 +3,12 @@ import SectionTitle from '../ui/SectionTitle'
 import { useTheme } from '../../hooks/useTheme'
 
 const achievements = [
-  { emoji: '🏆', title: 'Best Tech Company 2024',    org: 'Sri Lanka Tech Awards',   year: '2024', color: '#f59e0b' },
-  { emoji: '🥇', title: 'Top Software Developer',    org: 'SLASSCOM Awards',         year: '2023', color: '#1a3cff' },
-  { emoji: '📜', title: 'ISO 9001:2015 Certified',   org: 'International Standards', year: '2024', color: '#10b981' },
-  { emoji: '⭐', title: '5-Star Client Rating',      org: 'Clutch.co Platform',      year: '2024', color: '#8b5cf6' },
-  { emoji: '🌐', title: 'Best Digital Agency',       org: 'Digital Lanka Awards',    year: '2023', color: '#ec4899' },
-  { emoji: '💼', title: 'Top Employer of the Year',  org: 'HR Excellence Awards',    year: '2024', color: '#06b6d4' },
+  { emoji: '🏆', /*title: 'Best Tech Company 2024',    org: 'Sri Lanka Tech Awards',   year: '2024', color: '#f59e0b'*/ },
+  { emoji: '🥇', /*title: 'Top Software Developer',    org: 'SLASSCOM Awards',         year: '2023', color: '#1a3cff'*/ },
+  { emoji: '📜', /*title: 'ISO 9001:2015 Certified',   org: 'International Standards', year: '2024', color: '#10b981'*/ },
+  { emoji: '⭐', /*title: '5-Star Client Rating',      org: 'Clutch.co Platform',      year: '2024', color: '#8b5cf6'*/ },
+  { emoji: '🌐', /*title: 'Best Digital Agency',       org: 'Digital Lanka Awards',    year: '2023', color: '#ec4899'*/ },
+  { emoji: '💼', /*title: 'Top Employer of the Year',  org: 'HR Excellence Awards',    year: '2024', color: '#06b6d4'*/ },
 ]
 
 const Achievements = () => {

@@ -3,41 +3,41 @@ import SectionTitle from '../ui/SectionTitle'
 
 const timeline = [
   {
-    year:  '2020',
+    year:  '2024',
     title: 'Company Founded',
-    desc:  'Hexora Solutions was established in Colombo with 3 founding members and a vision to democratize digital solutions for Sri Lankan businesses.',
+    desc:  'Hexora Solutions was established with 3 founding members and a vision to democratize digital solutions for Sri Lankan businesses.',
     emoji: '🚀',
     color: '#1a3cff',
-    milestones: ['First office opened', 'First 5 clients onboarded', 'Core team formed'],
+    milestones: ['First office opened', 'First 2 clients onboarded', 'Core team formed'],
   },
   {
-    year:  '2021',
+    year:  '2024',
     title: 'First Major Project',
     desc:  'Delivered our first enterprise ERP system for a leading hospital in Colombo, marking our entry into the enterprise software market.',
     emoji: '⭐',
     color: '#10b981',
-    milestones: ['Hospital ERP delivered', 'Team grew to 15 members', '25 projects completed'],
-  },
-  {
-    year:  '2022',
-    title: 'Team Expansion',
-    desc:  'Expanded our team to 30+ professionals and opened a dedicated development center with state-of-the-art facilities.',
-    emoji: '👥',
-    color: '#8b5cf6',
-    milestones: ['30+ team members', 'New development center', '50 clients milestone'],
-  },
-  {
-    year:  '2023',
-    title: '100+ Clients Milestone',
-    desc:  'Achieved the landmark of 100+ satisfied clients and expanded our services to include mobile app development and digital marketing.',
-    emoji: '🏆',
-    color: '#f59e0b',
-    milestones: ['100+ happy clients', 'Mobile division launched', 'Marketing team added'],
+    milestones: ['Hospital ERP delivered', 'Team grew to 2 members', '5 projects completed'],
   },
   {
     year:  '2024',
-    title: 'New Office & Growth',
-    desc:  'Moved to a larger headquarters, expanded internationally, and achieved ISO 9001 certification for quality management.',
+    title: 'Team Expansion',
+    desc:  'Expanded our team to 5+ professionals and opened a dedicated development center with state-of-the-art facilities.',
+    emoji: '👥',
+    color: '#8b5cf6',
+    milestones: ['5+ team members', 'New development center', '5 clients milestone'],
+  },
+  {
+    year:  '2024',
+    title: '10+ Clients Milestone',
+    desc:  'Achieved the landmark of 10+ satisfied clients and expanded our services to include mobile app development and digital marketing.',
+    emoji: '🏆',
+    color: '#f59e0b',
+    milestones: ['10+ happy clients', 'Mobile division launched', 'Marketing team added'],
+  },
+  {
+    year:  '2025',
+    title: 'Growth',
+    desc:  'Moved to a headquarters, expanded internationally.',
     emoji: '🏢',
     color: '#ec4899',
     milestones: ['New HQ opened', 'ISO 9001 certified', 'International expansion'],
@@ -48,7 +48,7 @@ const timeline = [
     desc:  'Launched our dedicated AI & Emerging Technologies division, introducing AI-powered solutions, machine learning, and intelligent automation.',
     emoji: '🤖',
     color: '#06b6d4',
-    milestones: ['AI division launched', '50+ team members', '250+ projects delivered'],
+    milestones: ['AI division launched', '5+ team members', '20+ projects delivered'],
   },
 ]
 
@@ -77,7 +77,7 @@ const CompanyTimeline = () => {
           badge="Our Journey"
           title={
             <>
-              5 Years of{' '}
+              2 Years of{' '}
               <span
                 style={{
                   background: 'linear-gradient(135deg, #60a5fa, #818cf8)',

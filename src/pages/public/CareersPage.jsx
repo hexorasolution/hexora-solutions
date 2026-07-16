@@ -22,7 +22,7 @@ const benefits = [
 ]
 
 const jobs = [
-  {
+ /* {
     id: 1, title: 'Senior React Developer',
     dept: 'Development', location: 'Colombo / Remote',
     type: 'Full-time', salary: 'LKR 200,000 – 350,000',
@@ -69,7 +69,7 @@ const jobs = [
     color: '#06b6d4', urgent: false,
     requirements: ['AWS / Azure certified', 'Docker & Kubernetes', 'CI/CD pipelines', 'Linux administration', 'Terraform / Ansible'],
     description: 'Build and maintain our cloud infrastructure, CI/CD pipelines, and DevOps practices. You will ensure 99.9% uptime for all client systems and drive our cloud-first strategy.',
-  },
+  },*/
 ]
 
 /* ── Job Card ─────────────────────────────────── */

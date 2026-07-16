@@ -4,16 +4,16 @@ import SectionTitle from '../ui/SectionTitle'
 
 const branches = [
   {
-    city:    'Colombo HQ',
-    address: '123, Galle Road, Colombo 03, Sri Lanka',
+    city:    'Opening Soon...',
+    address: '–',
     phone:   '+94 11 XXX XXXX',
-    email:   'colombo@hexora.lk',
+    email:   'xxxxxx@hexora.lk',
     hours:   'Mon–Fri: 9AM–6PM, Sat: 9AM–1PM',
     color:   '#1a3cff',
     emoji:   '🏙️',
     main:    true,
   },
-  {
+ /* {
     city:    'Kandy Branch',
     address: '45, Dalada Veediya, Kandy, Sri Lanka',
     phone:   '+94 81 XXX XXXX',
@@ -32,7 +32,7 @@ const branches = [
     color:   '#8b5cf6',
     emoji:   '🌊',
     main:    false,
-  },
+  },*/
 ]
 
 const OfficeBranches = () => {

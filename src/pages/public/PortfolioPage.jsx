@@ -266,7 +266,7 @@ const PortfolioPage = () => {
 
       <PageHeroBanner
         badge="Our Portfolio"
-        title="250+ Projects"
+        title="28+ Projects"
         titleHighlight="Delivered"
         subtitle="Explore our work across industries and technology domains. Every project tells a story of digital transformation."
         breadcrumb={[{ label: 'Home', path: '/' }, { label: 'Portfolio' }]}

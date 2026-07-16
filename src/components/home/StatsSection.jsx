@@ -34,7 +34,7 @@ const Counter = ({ end, duration = 2500, suffix = '' }) => {
 const stats = [
   {
     icon:   FiCheckCircle,
-    end:    250,
+    end:    28,
     suffix: '+',
     label:  'Projects Completed',
     color:  '#1a3cff',
@@ -70,7 +70,7 @@ const stats = [
   },
   {
     icon:   FiGlobe,
-    end:    12,
+    end:    3,
     suffix: '+',
     label:  'Countries Served',
     color:  '#ec4899',
@@ -88,7 +88,7 @@ const stats = [
   },
   {
     icon:   FiZap,
-    end:    50,
+    end:    10,
     suffix: '+',
     label:  'Team Members',
     color:  '#f97316',
@@ -97,7 +97,7 @@ const stats = [
   },
   {
     icon:   FiTrendingUp,
-    end:    300,
+    end:    299,
     suffix: '%',
     label:  'Average ROI',
     color:  '#1a3cff',

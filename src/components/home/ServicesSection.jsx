@@ -132,10 +132,8 @@ const services = [
 
 const ServiceCard = ({ service, index }) => (
   <motion.div
-    className="relative p-6 rounded-2xl group cursor-pointer overflow-hidden"
+    className="relative p-6 rounded-2xl group cursor-pointer overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700"
     style={{
-      background: 'white',
-      border: '1px solid #e5e7eb',
       boxShadow: '0 4px 20px rgba(0,0,0,0.06)',
     }}
     initial={{ opacity: 0, y: 50 }}
@@ -145,7 +143,6 @@ const ServiceCard = ({ service, index }) => (
     whileHover={{
       y: -10,
       boxShadow: `0 25px 50px ${service.color}20`,
-      borderColor: service.color + '40',
     }}
   >
     {/* Popular badge */}

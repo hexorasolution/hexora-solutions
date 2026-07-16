@@ -62,7 +62,7 @@ export const servicesData = {
       { q: 'Can you integrate with existing systems?',   a: 'Absolutely. We specialize in API integrations with third-party platforms and legacy systems.' },
       { q: 'What about post-launch support?',            a: 'All plans include dedicated support. We offer monthly AMC plans for ongoing maintenance.' },
     ],
-    stats: [{ n: '80+', l: 'Software Projects' }, { n: '100%', l: 'Source Code Ownership' }, { n: '99.9%', l: 'Uptime Guaranteed' }, { n: '24/7', l: 'Support Available' }],
+    stats: [{ n: '15+', l: 'Software Projects' }, { n: '100%', l: 'Source Code Ownership' }, { n: '99.9%', l: 'Uptime Guaranteed' }, { n: '24/7', l: 'Support Available' }],
   },
 
   'website-solutions': {
@@ -112,7 +112,7 @@ export const servicesData = {
       { q: 'Do you provide hosting?',              a: 'Yes. We offer managed hosting on fast Sri Lankan and international servers.' },
       { q: 'Can I update content myself?',         a: 'Absolutely. All sites come with a CMS so you can update content without any coding.' },
     ],
-    stats: [{ n: '100+', l: 'Websites Built' }, { n: '90+', l: 'PageSpeed Score' }, { n: '100%', l: 'Mobile Responsive' }, { n: '3x', l: 'Avg Lead Increase' }],
+    stats: [{ n: '5+', l: 'Websites Built' }, { n: '90+', l: 'PageSpeed Score' }, { n: '100%', l: 'Mobile Responsive' }, { n: '3x', l: 'Avg Lead Increase' }],
   },
 
   'mobile-apps': {
@@ -162,7 +162,7 @@ export const servicesData = {
       { q: 'Can it work offline?',               a: 'Yes! We implement offline-first architecture for core functionality.' },
       { q: 'React Native vs Native?',            a: 'For most apps, React Native is 80% cheaper with 95% the performance. We recommend based on your specific needs.' },
     ],
-    stats: [{ n: '50+', l: 'Apps Delivered' }, { n: '500K+', l: 'Total App Users' }, { n: '4.8★', l: 'Average Rating' }, { n: '2', l: 'Platforms Supported' }],
+    stats: [{ n: '3+', l: 'Apps Delivered' }, { n: '500K+', l: 'Total App Users' }, { n: '4.8★', l: 'Average Rating' }, { n: '2', l: 'Platforms Supported' }],
   },
 }
 
@@ -216,7 +216,7 @@ remainingServices.forEach((s) => {
       { q: 'What is your turnaround?', a: 'Depends on scope. We provide detailed timelines during our consultation call.' },
       { q: 'Do you offer AMC?',        a: 'Yes, we offer comprehensive Annual Maintenance Contracts for ongoing support.' },
     ],
-    stats: [{ n: '50+', l: 'Projects Done' }, { n: '99%', l: 'Satisfaction' }, { n: '24/7', l: 'Support' }, { n: '5★', l: 'Rated' }],
+    stats: [{ n: '2+', l: 'Projects Done' }, { n: '99%', l: 'Satisfaction' }, { n: '24/7', l: 'Support' }, { n: '5★', l: 'Rated' }],
   }
 })
 

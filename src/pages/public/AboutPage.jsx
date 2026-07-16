@@ -26,7 +26,7 @@ const AboutPage = () => {
         badge="About Hexora Solutions"
         title="We Are Digital"
         titleHighlight="Innovators"
-        subtitle="Transforming businesses across Sri Lanka and beyond through cutting-edge technology solutions since 2020."
+        subtitle="Transforming businesses across Sri Lanka and beyond through cutting-edge technology solutions since 2024."
         breadcrumb={[{ label: 'Home', path: '/' }, { label: 'About Us' }]}
         image="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80"
       />

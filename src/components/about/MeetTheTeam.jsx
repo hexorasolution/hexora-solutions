@@ -8,12 +8,12 @@ const departments = ['All', 'Leadership', 'Development', 'Design', 'Marketing', 
 const team = [
   { name: 'Ashan Perera',       role: 'CEO & Founder',         dept: 'Leadership',   avatar: 'AP', color: '#1a3cff', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&q=80',  bio: '10+ years in software & business leadership.' },
   { name: 'Nimasha Silva',      role: 'CTO',                   dept: 'Leadership',   avatar: 'NS', color: '#10b981', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80', bio: 'Cloud architect & full-stack engineering lead.' },
-  { name: 'Kasun Fernando',     role: 'Lead Designer',         dept: 'Design',       avatar: 'KF', color: '#8b5cf6', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&q=80', bio: 'Award-winning UI/UX with 8 years experience.' },
+  /*{ name: 'Kasun Fernando',     role: 'Lead Designer',         dept: 'Design',       avatar: 'KF', color: '#8b5cf6', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&q=80', bio: 'Award-winning UI/UX with 8 years experience.' },
   { name: 'Dilani Rathnayake',  role: 'Project Manager',       dept: 'Operations',   avatar: 'DR', color: '#f59e0b', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&q=80', bio: 'PMP certified, delivers complex projects on time.' },
   { name: 'Sahan Jayawardena',  role: 'Senior Developer',      dept: 'Development',  avatar: 'SJ', color: '#ec4899', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&q=80', bio: 'React & Node.js expert, 6 years full-stack.' },
   { name: 'Malika Dissanayake', role: 'Marketing Head',        dept: 'Marketing',    avatar: 'MD', color: '#06b6d4', image: 'https://images.unsplash.com/photo-1598550874175-4d0ef436c909?w=300&q=80', bio: 'Digital marketing strategist, SEO & paid ads.' },
   { name: 'Ruwan Kumara',       role: 'Mobile Developer',      dept: 'Development',  avatar: 'RK', color: '#f97316', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80', bio: 'React Native & Flutter specialist.' },
-  { name: 'Sachini Wijesinghe', role: 'UI/UX Designer',        dept: 'Design',       avatar: 'SW', color: '#1a3cff', image: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=300&q=80', bio: 'Figma expert creating beautiful user experiences.' },
+  { name: 'Sachini Wijesinghe', role: 'UI/UX Designer',        dept: 'Design',       avatar: 'SW', color: '#1a3cff', image: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=300&q=80', bio: 'Figma expert creating beautiful user experiences.' },*/
 ]
 
 const TeamCard = ({ member, i }) => (
@@ -124,7 +124,7 @@ const MeetTheTeam = () => {
               </span>
             </>
           }
-          subtitle="50+ talented professionals united by a passion for technology and a drive to deliver exceptional results."
+          subtitle="5+ talented professionals united by a passion for technology and a drive to deliver exceptional results."
           align="center"
         />
 

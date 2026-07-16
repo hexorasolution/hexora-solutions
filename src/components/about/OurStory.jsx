@@ -3,9 +3,9 @@ import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 import { FiCheckCircle } from 'react-icons/fi'
 
 const highlights = [
-  'Founded in 2020 with a vision to empower Sri Lankan businesses',
-  'Grew from 3 to 50+ expert professionals in 5 years',
-  'Delivered 250+ successful projects across 12+ countries',
+  'Founded in 2024 with a vision to empower Sri Lankan businesses',
+  'Grew from 2 to 5+ expert professionals in 2 years',
+  'Delivered 28+ successful projects across 3+ countries',
   'Achieved 99% client satisfaction rate consistently',
   'Launched AI division in 2025 for next-gen solutions',
 ]
@@ -58,7 +58,7 @@ const OurStory = () => {
                 Est.
               </div>
               <div className="text-white font-black font-heading text-4xl leading-none">
-                2020
+                2024
               </div>
               <div className="text-white/80 text-sm mt-1">
                 Colombo, Sri Lanka
@@ -142,16 +142,16 @@ const OurStory = () => {
             </h2>
 
             <p className="text-gray-500 dark:text-gray-400 leading-relaxed mb-5 text-lg">
-              Hexora Solutions was born in 2020 from a simple belief — that every
+              Hexora Solutions was born in 2024 from a simple belief — that every
               business in Sri Lanka deserves access to world-class digital solutions
               without the world-class price tag.
             </p>
 
             <p className="text-gray-500 dark:text-gray-400 leading-relaxed mb-8">
-              What started as a 3-person startup in a small office in Colombo has
-              grown into a 50+ member powerhouse delivering enterprise-grade software,
+              What started as a 2-person startup in a small office in Remote has
+              grown into a 5+ member powerhouse delivering enterprise-grade software,
               websites, mobile applications, and complete digital ecosystems to clients
-              across Sri Lanka and 12+ countries worldwide.
+              across Sri Lanka and 3+ countries worldwide.
             </p>
 
             {/* Highlights */}
