@@ -197,7 +197,7 @@ const ServiceDetailPage = () => {
   return (
     <>
       <Helmet>
-        <title>{service.title} | Hexora Solutions</title>
+        <title>{service.title} | Hexora Solution</title>
         <meta name="description" content={service.intro.slice(0, 155)} />
         <link rel="canonical" href={`https://hexora.lk/services/${slug}`} />
       </Helmet>

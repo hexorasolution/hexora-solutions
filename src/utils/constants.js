@@ -1,5 +1,5 @@
 export const COMPANY = {
-  name:      'Hexora Solutions',
+  name:      'Hexora Solution',
   shortName: 'Hexora',
   tagline:   'Innovate | Integrate | Empower',
   domain:    'hexora.lk',

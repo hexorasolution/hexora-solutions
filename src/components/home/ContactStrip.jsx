@@ -94,7 +94,7 @@ const ContactStrip = () => {
               </Link>
 
               <motion.a
-                href="https://wa.me/94764765358?text=Hello Hexora Solutions!"
+                href="https://wa.me/94764765358?text=Hello Hexora Solution!"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2.5 px-8 py-4 rounded-full text-white font-bold text-lg"

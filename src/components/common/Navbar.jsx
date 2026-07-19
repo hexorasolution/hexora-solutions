@@ -86,7 +86,7 @@ const Navbar = () => {
               <span className={`name ${!scrolled && !isDark ? 'text-white' : ''}`}>
                 Hexora
               </span>
-              <span className="tagline">Solutions</span>
+              <span className="tagline">Solution</span>
             </div>
           </Link>
 
@@ -202,7 +202,7 @@ const Navbar = () => {
             </div>
             <div className="navbar__logo-text">
               <span className="name">Hexora</span>
-              <span className="tagline">Solutions</span>
+              <span className="tagline"></span>
             </div>
           </Link>
           <button

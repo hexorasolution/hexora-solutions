@@ -259,8 +259,8 @@ const PortfolioPage = () => {
   return (
     <>
       <Helmet>
-        <title>Portfolio | Hexora Solutions</title>
-        <meta name="description" content="Browse Hexora Solutions' portfolio of 250+ successful projects – ERP systems, websites, mobile apps, AI projects, and more." />
+        <title>Portfolio | Hexora Solution</title>
+        <meta name="description" content="Browse Hexora Solution' portfolio of 250+ successful projects – ERP systems, websites, mobile apps, AI projects, and more." />
         <link rel="canonical" href="https://hexora.lk/portfolio" />
       </Helmet>
 

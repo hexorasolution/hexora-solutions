@@ -25,7 +25,7 @@ const PortfolioDetailPage = () => {
   return (
     <>
       <Helmet>
-        <title>{project.title} | Portfolio | Hexora Solutions</title>
+        <title>{project.title} | Portfolio | Hexora Solution</title>
         <meta name="description" content={project.description.slice(0, 155)} />
       </Helmet>
 

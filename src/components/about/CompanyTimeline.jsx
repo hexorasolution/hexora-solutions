@@ -5,7 +5,7 @@ const timeline = [
   {
     year:  '2024',
     title: 'Company Founded',
-    desc:  'Hexora Solutions was established with 3 founding members and a vision to democratize digital solutions for Sri Lankan businesses.',
+    desc:  'Hexora Solution was established with 3 founding members and a vision to democratize digital solutions for Sri Lankan businesses.',
     emoji: '🚀',
     color: '#1a3cff',
     milestones: ['First office opened', 'First 2 clients onboarded', 'Core team formed'],

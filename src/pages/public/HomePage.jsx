@@ -16,8 +16,8 @@ const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Hexora Solutions | Innovate | Integrate | Empower</title>
-        <meta name="description" content="Hexora Solutions – Sri Lanka's leading digital business platform. Software development, web solutions, mobile apps, digital marketing and more." />
+        <title>Hexora Solution | Innovate | Integrate | Empower</title>
+        <meta name="description" content="Hexora Solution – Sri Lanka's leading digital business platform. Software development, web solutions, mobile apps, digital marketing and more." />
         <meta name="keywords" content="software development, website design, mobile apps, digital marketing, IT support, ERP, Sri Lanka" />
         <link rel="canonical" href="https://hexora.lk" />
       </Helmet>

@@ -11,7 +11,7 @@ const testimonials = [
     avatar:  'RK',
     color:   '#1a3cff',
     rating:  5,
-    text:    'Hexora Solutions transformed our entire business operations. Their ERP system reduced our processing time by 70% and the team was incredibly professional throughout the project.',
+    text:    'Hexora Solution transformed our entire business operations. Their ERP system reduced our processing time by 70% and the team was incredibly professional throughout the project.',
     company: 'TechCorp Lanka',
     project: 'ERP System Development',
   },
@@ -158,7 +158,7 @@ const TestimonialsSection = () => {
               </span>
             </>
           }
-          subtitle="Don't just take our word for it. Here's what our satisfied clients have to say about working with Hexora Solutions."
+          subtitle="Don't just take our word for it. Here's what our satisfied clients have to say about working with Hexora Solution."
           align="center"
           light
         />

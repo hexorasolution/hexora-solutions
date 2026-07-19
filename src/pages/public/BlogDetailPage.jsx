@@ -14,7 +14,7 @@ const blogPosts = [
     title: 'The Future of AI in Business: What You Need to Know in 2025',
     image: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80',
     category: 'AI & ML', author: 'Ashan Perera',
-    authorAvatar: 'AP', authorBio: 'CEO of Hexora Solutions with 10+ years in software engineering.',
+    authorAvatar: 'AP', authorBio: 'CEO of Hexora Solution with 10+ years in software engineering.',
     date: 'January 15, 2025', readTime: '8 min',
     color: '#06b6d4', tags: ['AI', 'Business', 'Technology', '2025'],
     content: `

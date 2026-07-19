@@ -21,7 +21,7 @@ const MapSection = () => {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Hexora Solutions Office Location"
+            title="Hexora Solution Office Location"
           />
         </motion.div>
       </div>

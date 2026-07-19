@@ -329,8 +329,8 @@ const CareersPage = () => {
   return (
     <>
       <Helmet>
-        <title>Careers | Hexora Solutions</title>
-        <meta name="description" content="Join the Hexora Solutions team! Explore exciting career opportunities in software development, design, marketing, and more." />
+        <title>Careers | Hexora Solution</title>
+        <meta name="description" content="Join the Hexora Solution team! Explore exciting career opportunities in software development, design, marketing, and more." />
         <link rel="canonical" href="https://hexora.lk/careers" />
       </Helmet>
 

@@ -201,8 +201,8 @@ const BlogPage = () => {
   return (
     <>
       <Helmet>
-        <title>Blog & Insights | Hexora Solutions</title>
-        <meta name="description" content="Stay updated with the latest technology trends, business insights, and digital transformation strategies from Hexora Solutions." />
+        <title>Blog & Insights | Hexora Solution</title>
+        <meta name="description" content="Stay updated with the latest technology trends, business insights, and digital transformation strategies from Hexora Solution." />
         <link rel="canonical" href="https://hexora.lk/blog" />
       </Helmet>
 

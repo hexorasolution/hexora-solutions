@@ -101,7 +101,7 @@ const WhyChooseUs = () => {
                   WebkitTextFillColor: 'transparent',
                 }}
               >
-                Hexora Solutions
+                Hexora Solution
               </span>
             </>
           }

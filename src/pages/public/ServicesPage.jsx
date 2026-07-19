@@ -29,8 +29,8 @@ const ServicesPage = () => {
   return (
     <>
       <Helmet>
-        <title>Our Services | Hexora Solutions</title>
-        <meta name="description" content="Explore all 12 digital services offered by Hexora Solutions – software development, web design, mobile apps, digital marketing, and more." />
+        <title>Our Services | Hexora Solution</title>
+        <meta name="description" content="Explore all 12 digital services offered by Hexora Solution – software development, web design, mobile apps, digital marketing, and more." />
         <link rel="canonical" href="https://hexora.lk/services" />
       </Helmet>
 

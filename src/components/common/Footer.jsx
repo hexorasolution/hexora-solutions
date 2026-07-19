@@ -110,7 +110,7 @@ const Footer = () => {
                   Hexora
                 </h3>
                 <p className="text-blue-400 text-xs tracking-widest uppercase mt-0.5">
-                  Solutions
+                  Solution
                 </p>
               </div>
             </Link>
@@ -262,7 +262,7 @@ const Footer = () => {
             </h4>
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
               Subscribe to get the latest updates on technology, digital trends,
-              and exclusive offers from Hexora Solutions.
+              and exclusive offers from Hexora Solution.
             </p>
 
             <form onSubmit={handleNewsletter} className="relative mb-4">
@@ -336,7 +336,7 @@ const Footer = () => {
           style={{ borderColor: 'rgba(255,255,255,0.08)' }}
         >
           <p className="text-gray-500 text-sm text-center md:text-left">
-            © {new Date().getFullYear()} Hexora Solutions. All rights reserved.
+            © {new Date().getFullYear()} Hexora Solution. All rights reserved.
             Built with ❤️ in Sri Lanka.
           </p>
           <div className="flex items-center gap-6">

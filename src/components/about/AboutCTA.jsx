@@ -60,7 +60,7 @@ const AboutCTA = () => {
             </h2>
 
             <p className="text-gray-300 max-w-xl mx-auto mb-10 leading-relaxed">
-              Join 100+ businesses that trust Hexora Solutions to power their
+              Join 100+ businesses that trust Hexora Solution to power their
               digital success. Get your free consultation today.
             </p>
 

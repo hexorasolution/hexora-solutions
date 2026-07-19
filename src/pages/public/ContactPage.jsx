@@ -11,10 +11,10 @@ const ContactPage = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Hexora Solutions</title>
+        <title>Contact Us | Hexora Solution</title>
         <meta
           name="description"
-          content="Get in touch with Hexora Solutions. Contact us for a free consultation, project quote, or general enquiry. We respond within 24 hours."
+          content="Get in touch with Hexora Solution. Contact us for a free consultation, project quote, or general enquiry. We respond within 24 hours."
         />
         <link rel="canonical" href="https://hexora.lk/contact" />
       </Helmet>

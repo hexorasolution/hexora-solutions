@@ -14,10 +14,10 @@ const AboutPage = () => {
   return (
     <>
       <Helmet>
-        <title>About Us | Hexora Solutions</title>
+        <title>About Us | Hexora Solution</title>
         <meta
           name="description"
-          content="Learn about Hexora Solutions – our story, vision, mission, team and journey to becoming Sri Lanka's leading digital solutions provider."
+          content="Learn about Hexora Solution – our story, vision, mission, team and journey to becoming Sri Lanka's leading digital solutions provider."
         />
         <link rel="canonical" href="https://hexora.lk/about" />
       </Helmet>

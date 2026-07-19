@@ -98,7 +98,7 @@ const LoadingScreen = ({ onComplete }) => {
           transition={{ delay: 0.3 }}
         >
           <h1 className="text-3xl font-bold text-white font-heading">
-            Hexora Solutions
+            Hexora Solution
           </h1>
           <p className="text-sm text-blue-400 tracking-widest uppercase mt-1">
             Innovate | Integrate | Empower

@@ -5,7 +5,7 @@ import { useState } from 'react'
 const WhatsAppButton = () => {
   const [isHovered, setIsHovered] = useState(false)
   const phoneNumber = '94764765358'
-  const message     = 'Hello Hexora Solutions! I would like to know more about your services.'
+  const message     = 'Hello Hexora Solution! I would like to know more about your services.'
 
   const handleClick = () => {
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`

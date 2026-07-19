@@ -142,7 +142,7 @@ const OurStory = () => {
             </h2>
 
             <p className="text-gray-500 dark:text-gray-400 leading-relaxed mb-5 text-lg">
-              Hexora Solutions was born in 2024 from a simple belief — that every
+              Hexora Solution was born in 2024 from a simple belief — that every
               business in Sri Lanka deserves access to world-class digital solutions
               without the world-class price tag.
             </p>
