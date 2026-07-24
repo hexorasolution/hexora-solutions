@@ -65,7 +65,7 @@ const TeamCard = ({ member, i }) => (
               className="w-8 h-8 rounded-full flex items-center justify-center text-white"
               style={{ background: 'rgba(255,255,255,0.2)', backdropFilter: 'blur(10px)' }}
               initial={{ y: 20, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
+              //whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: j * 0.05 }}
               whileHover={{ scale: 1.2, background: member.color }}
             >
@@ -157,16 +157,16 @@ const MeetTheTeam = () => {
         </div>
 
         {/* Team Grid */}
+          <AnimatePresence mode="wait">
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
           layout
         >
-          <AnimatePresence>
             {filtered.map((member, i) => (
               <TeamCard key={member.name} member={member} i={i} />
             ))}
-          </AnimatePresence>
         </motion.div>
+          </AnimatePresence>
       </div>
     </section>
   )

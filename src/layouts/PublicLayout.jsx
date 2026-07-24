@@ -30,7 +30,7 @@ const PublicLayout = () => {
       <Navbar />
 
       <main className="flex-1">
-        <AnimatePresence mode="wait">
+        <AnimatePresence >
           <motion.div
             key={location.pathname}
             variants={pageVariants}

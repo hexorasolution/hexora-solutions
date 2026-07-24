@@ -7,6 +7,7 @@ import { Toaster } from 'react-hot-toast'
 import { store } from './store/index'
 import App from './App'
 import './styles/globals.scss'
+import './styles/tailwind.css'
 
 const queryClient = new QueryClient({
   defaultOptions: {

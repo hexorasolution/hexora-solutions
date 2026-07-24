@@ -1,23 +1,24 @@
 import { useState, useMemo } from 'react'
-import { Helmet }  from 'react-helmet-async'
-import { Link }    from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
+import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FiExternalLink, FiArrowRight, FiSearch } from 'react-icons/fi'
 import PageHeroBanner from '../../components/about/PageHeroBanner'
-import ContactStrip   from '../../components/home/ContactStrip'
-import SectionTitle   from '../../components/ui/SectionTitle'
+import ContactStrip from '../../components/home/ContactStrip'
+import SectionTitle from '../../components/ui/SectionTitle'
 import { portfolioCategories, portfolioProjects } from '../../data/portfolioData'
 
 /* ── Project Card ─────────────────────────────── */
 const ProjectCard = ({ project, i }) => (
   <motion.article
+    
     className="group relative rounded-2xl overflow-hidden"
     style={{
       background: 'white',
       border: '1px solid #e5e7eb',
       boxShadow: '0 4px 20px rgba(0,0,0,0.06)',
     }}
-    layout
+
     initial={{ opacity: 0, y: 40, scale: 0.95 }}
     animate={{ opacity: 1, y: 0, scale: 1 }}
     exit={{ opacity: 0, scale: 0.9 }}
@@ -34,13 +35,13 @@ const ProjectCard = ({ project, i }) => (
         transition={{ duration: 0.5 }}
       />
       {/* Overlay */}
-      <motion.div
+      <div
         className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100"
         style={{ background: `${project.color}dd` }}
         transition={{ duration: 0.3 }}
       >
         <Link to={`/portfolio/${project.slug}`}>
-          <motion.div
+          <div
             className="flex items-center gap-2 px-6 py-3 rounded-full bg-white font-bold text-sm"
             style={{ color: project.color }}
             initial={{ scale: 0.8, y: 10 }}
@@ -48,9 +49,9 @@ const ProjectCard = ({ project, i }) => (
             animate={{ scale: 1, y: 0 }}
           >
             View Project <FiExternalLink size={15} />
-          </motion.div>
+           </div>
         </Link>
-      </motion.div>
+       </div>
 
       {/* Category badge */}
       <div
@@ -130,14 +131,14 @@ const ProjectCard = ({ project, i }) => (
 
       {/* CTA */}
       <Link to={`/portfolio/${project.slug}`}>
-        <motion.div
+        <div
           className="flex items-center gap-2 text-sm font-bold"
           style={{ color: project.color }}
           whileHover={{ x: 5 }}
           transition={{ duration: 0.2 }}
         >
           View Case Study <FiArrowRight size={15} />
-        </motion.div>
+         </div>
       </Link>
     </div>
   </motion.article>
@@ -145,7 +146,7 @@ const ProjectCard = ({ project, i }) => (
 
 /* ── Featured Project ─────────────────────────── */
 const FeaturedProject = ({ project }) => (
-  <motion.div
+  <div
     className="relative rounded-3xl overflow-hidden mb-16"
     style={{ background: 'white', border: '1px solid #e5e7eb', boxShadow: '0 8px 40px rgba(0,0,0,0.1)' }}
     initial={{ opacity: 0, y: 40 }}
@@ -229,13 +230,14 @@ const FeaturedProject = ({ project }) => (
         </div>
       </div>
     </div>
-  </motion.div>
+   </div>
 )
 
 /* ── Main Page ────────────────────────────────── */
 const PortfolioPage = () => {
+  
   const [activeCategory, setActiveCategory] = useState('All')
-  const [searchQuery,    setSearchQuery]    = useState('')
+  const [searchQuery, setSearchQuery] = useState('')
 
   const featuredProjects = portfolioProjects.filter((p) => p.featured)
 
@@ -325,7 +327,7 @@ const PortfolioPage = () => {
                 className="pl-10 pr-4 py-2.5 rounded-xl border text-sm outline-none bg-white text-gray-700"
                 style={{ borderColor: '#e5e7eb', minWidth: 220 }}
                 onFocus={(e) => { e.target.style.borderColor = '#1a3cff'; e.target.style.boxShadow = '0 0 0 3px rgba(26,60,255,0.1)' }}
-                onBlur={(e)  => { e.target.style.borderColor = '#e5e7eb'; e.target.style.boxShadow = 'none' }}
+                onBlur={(e) => { e.target.style.borderColor = '#e5e7eb'; e.target.style.boxShadow = 'none' }}
               />
             </div>
           </div>
@@ -342,20 +344,20 @@ const PortfolioPage = () => {
           </motion.p>
 
           {/* Grid */}
-          <motion.div
+          <div
+            
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
-            layout
           >
             <AnimatePresence mode="popLayout">
               {filtered.map((project, i) => (
                 <ProjectCard key={project.id} project={project} i={i} />
               ))}
             </AnimatePresence>
-          </motion.div>
+           </div>
 
           {/* Empty state */}
           {filtered.length === 0 && (
-            <motion.div
+            <div
               className="text-center py-20"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -371,7 +373,7 @@ const PortfolioPage = () => {
               >
                 Clear Filters
               </motion.button>
-            </motion.div>
+             </div>
           )}
         </div>
       </section>
